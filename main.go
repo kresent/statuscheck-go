@@ -22,7 +22,6 @@ func main() {
 
 	for _, l := range links {
 		go checkLink(l, c)
-		fmt.Println(l, " seems to work ok")
 	}
 
 	for l := range c {
